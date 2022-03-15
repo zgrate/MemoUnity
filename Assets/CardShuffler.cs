@@ -14,6 +14,7 @@ public class CardShuffler : MonoBehaviour
     public GameObject boardObject;
     public GameObject cardPrefab;
     public TextMeshProUGUI winText, scoreText;
+    public GameObject endToHide;
 
     private List<GameObject> InternalCards = new List<GameObject>();
     private bool endless;
@@ -94,6 +95,7 @@ public class CardShuffler : MonoBehaviour
             winText.gameObject.SetActive(true);
             winText.text = "You won!";
             winText.color = Color.blue;
+            endToHide.SetActive(false);
             
         }
         else
@@ -271,6 +273,7 @@ public class CardShuffler : MonoBehaviour
     public void StartGame(int type)
     {
         winText.gameObject.SetActive(false);
+        endToHide.SetActive(true);
         this.Score = 0;
         if (type == 0)
         {

@@ -7,7 +7,6 @@ public class CardScript : MonoBehaviour
 {
 
     private Sprite targetSprite;
-    private long initTime = 0;
     private CardShuffler shuffler;
     private bool uncovered = false;
     private bool solved = false;

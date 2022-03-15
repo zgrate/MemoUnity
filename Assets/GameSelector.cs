@@ -7,7 +7,6 @@ public class GameSelector : MonoBehaviour
 {
 
     public CardShuffler cardShuffler;
-    public Toggle toggle;
     public GameObject[] objectToHide;
     public GameObject screen;
 
